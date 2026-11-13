@@ -1,0 +1,48 @@
+.sobre{
+    max-width: 1100px;
+    width: calc(100% - 32px);
+    background: linear-gradient(145deg, var(--cartao-claro), var(--cartao));
+    margin: 0 auto;
+    border: 1px solid var(--borda);
+    border-radius: 28px;
+    box-shadow: var(--sombra);
+}
+
+.codigo{
+    text-align: center;
+    margin: 0 auto 34px;
+    color: var(--texto-suave);
+    font-weight: 400;
+}
+
+#cumprimento{
+    color: var(--amarelo);
+    font-size: 1.6rem;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.sobre p{
+    font-size: 1.15rem;
+    color: var(--texto-suave);
+    padding: 0 56px 48px;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px){
+    .sobre{
+        width: calc(100% - 24px);
+        border-radius: 20px;
+    }
+
+    .codigo{
+        padding: 0 20px;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .sobre p{
+        padding: 0 22px 30px;
+        font-size: 1rem;
+    }
+}

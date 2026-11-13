@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedalantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <span>Seja Bem Vindo(a)</span>
+        <nav>
+            <ul class="header-menu">
+                <li><a href="./index.html">inicio</a><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M0 0L11.5 5.5L0 11.5V0Z" fill="#B72929"/></svg></li>
+                <li><a href="./calculadora.html">calculadora</a><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M0 0L11.5 5.5L0 11.5V0Z" fill="#B72929"/></svg></li>
+                <li><a href="./acessorios.html">acessórios</a><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M0 0L11.5 5.5L0 11.5V0Z" fill="#B72929"/></svg></li>
+                <li><a href="./sobre.html">sobre</a><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M0 0L11.5 5.5L0 11.5V0Z" fill="#B72929"/></svg></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="titulo">CALCULADORA</h1>
+
+    <h3 class="codigo">Sugestões para os ajustes de sua bicicleta e pedal</h3>
+
+    <main class="calculadora">
+        <div class="cartao-overlay" aria-hidden="true"></div>
+        <div class="navegacao-modal" aria-label="Navegação entre os passos">
+            <button class="botao-modal botao-modal-anterior" type="button" aria-label="Voltar para o passo anterior">
+                &#8592; Anterior
+            </button>
+            <button class="botao-modal botao-modal-proximo" type="button" aria-label="Ir para o próximo passo">
+                Próximo &#8594;
+            </button>
+        </div>
+
+        <div class="direcionar">
+            <a class="indice" href="#passo1">1</a>
+            <a class="indice" href="#passo2">2</a>
+            <a class="indice" href="#passo3">3</a>
+            <a class="indice" href="#passo4">4</a>
+            <a class="indice" href="#passo5">5</a>
+            <a class="indice" href="#passo6">6</a>
+            <a class="indice" href="#passo7">7</a>
+            <a class="indice" href="#passo8">8</a>
+        </div>
+
+        <div id="passos-calculadora" class="passos">
+            <div id="passo1" class="passo1">
+                <h2>PRIMEIRO PASSO</h2>
+                <h3>Vamos Descobrir o seu tamanho de quadro ideal?</h3>
+                <div class="separar">
+                    <img class="imagem-passo imagem-cavalo" src="./img/cavalo.png" alt="Ilustração da medida do cavalo">
+                    <form class="calculo-quadro" id="form-tamanho-quadro">
+                        <label for="altura">ALTURA DO CICLISTA (m)</label>
+                        <input id="altura" name="altura" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Ex.: 1,75" required>
+                        <label for="cavalo">DISTÂNCIA DO CAVALO (cm)</label>
+                        <input id="cavalo" name="cavalo" type="number" min="0" step="0.1" inputmode="decimal" placeholder="Ex.: 80,0" required>
+                        <button class="calcular" type="submit">CALCULAR</button>
+                        <output class="resultado resultado-quadro" id="resultado-quadro" for="altura cavalo">Informe as medidas</output>
+                    </form>
+                </div>
+                <h4>Cavalo é a medida interior da perna, começando da pélvis até os pés.</h4>
+            </div>
+            
+            <div id="passo2" class="passo2">
+                <div class="passo-conteudo">
+                    <h2>SEGUNDO PASSO</h2>
+                    <h3>Vamos descobrir o Tamanho do seu selim ideal?</h3>
+                    <div class="separar">
+                        <img class="imagem-passo imagem-isquios" src="./img/isquios.png" alt="Ilustração da medida dos ísquios">
+                        <form class="calculo-quadro calculo-isquios" id="form-tamanho-selim">
+                            <h4>Meça a distância entre os seus ísquios.</h4>
+                            <label for="isquios">DISTÂNCIA DOS ÍSQUIOS (cm)</label>
+                            <input id="isquios" name="isquios" type="number" min="0" step="0.1" inputmode="decimal" placeholder="Ex.: 12,0" required>
+                            <button class="calcular" type="submit">CALCULAR</button>
+                            <output class="resultado resultado-quadro" id="resultado-selim" for="isquios">00,0 cm</output>
+                        </form>
+                    </div>
+                    <h4>ísquios é um osso que constitui a zona inferior da pélvis.</h4>
+                </div>
+            </div>
+            <div id="passo3" class="passo3">
+                <h2>TERCEIRO PASSO</h2>
+                <h3>Vamos descobrir a posição corretas dos pés nos pedais?</h3>
+                <img class="imagem-passo" src="./img/pedal.png" alt="Ilustração da posição dos pés no pedal">
+            </div>
+            <div id="passo4" class="passo4">
+                <h2>QUARTO PASSO</h2>
+                <h3>Vamos descobrir a inclinação correta do selim?</h3>
+                <img class="imagem-passo" src="./img/selim.png" alt="Ilustração da inclinação do selim">
+                <p>O SELIM preferencialmente deve ser alinhado em posição neutra, ou seja, nivelado em relação ao chão.</p>
+            </div>
+            <div id="passo5" class="passo5">
+                <h2>QUINTO PASSO</h2>
+                <h3>Vamos descobrir a altura correta do selim?</h3>
+                <img class="imagem-passo imagem-altura-selim" src="./img/altura-selim.png" alt="Ilustração da altura do selim">
+                <p>Essa será a distância entre o topo do seu selim e o centro do eixo do pedal da bicicleta, com ele na posição mais distante possível do selim. Para dar certo, é importante colocar o pedal na posição mais longe do selim, que é diferente do ponto mais baixo do pedal.</p>
+                <form class="calculo-quadro medida-selim" id="form-altura-selim">
+                    <label for="cavalo-selim">ALTURA DO CAVALO (cm)</label>
+                    <input id="cavalo-selim" name="cavalo-selim" type="number" min="0" step="0.1" inputmode="decimal" placeholder="Ex.: 80,0" required>
+                    <button class="calcular" type="submit">CALCULAR</button>
+                    <output class="resultado resultado-quadro" id="resultado-altura-selim" for="cavalo-selim">00,0 cm</output>
+                </form>
+            </div>
+            <div id="passo6" class="passo6">
+                <h2>SEXTO PASSO</h2>
+                <h3>Vamos descobrir a altura do guidão?</h3>
+                <img class="imagem-passo imagem-guidao" src="./img/guidao.png" alt="Ilustração da altura do guidão">
+                <p>A altura do guidão deve estar alinhada na mesma altura do selim. Existem algumas exceções, como atletas e pessoas com muita flexibilidade, que conseguem uma posição mais “agressiva”, de 0 até 6 graus negativos em relação ao selim.</p>
+                <p>Esse ajuste pode ser implementado quando o guidão permitir, com espaçadores, removendo ou adicionando-os até encontrar a altura adequada. Também é possível ajustar a mesa (suporte do guidão) em ângulos positivos ou negativos ou utilizar outro guidão com ângulos diferentes.</p>
+            </div>
+            <div id="passo7" class="passo7">
+                <h2>SÉTIMO PASSO</h2>
+                <h3>Vamos descobrir o alinhamento do joelho com o eixo do pedal?</h3>
+                <img class="imagem-passo imagem-joelho" src="./img/joelho.png" alt="Ilustração do alinhamento do joelho com o eixo do pedal">
+                <p>O alinhamento do joelho com o eixo do pedal é importante para evitar danos aos joelhos e às articulações das mãos, pois essas articulações podem ficar projetadas fora da posição correta.</p>
+                <p>Para efetuar esse ajuste, deve-se regular a posição do selim em seu trilho, movendo-o para frente ou para trás de acordo com a sua necessidade.</p>
+            </div>
+            <div id="passo8" class="passo8">
+                <h2>OITAVO PASSO</h2>
+                <h3>Vamos descobrir o tamanho do guidão ideal?</h3>
+                <img class="imagem-passo imagem-acromios" src="./img/acromios.png" alt="Ilustração da medida dos acrômios">
+                <p>Informe a distância entre os seus acrômios para calcular o tamanho ideal do guidão.</p>
+                <form class="calculo-guidao" id="form-tamanho-guidao">
+                    <label for="distancia-acromios">DISTÂNCIA DOS ACRÔMIOS (cm)</label>
+                    <input id="distancia-acromios" name="distancia-acromios" type="number" min="0" step="0.1" inputmode="decimal" placeholder="Ex.: 38,0" required>
+                    <button class="calcular" type="submit">CALCULAR</button>
+                    <output class="resultado resultado-guidao" id="tamanho-guidao" for="distancia-acromios">00,0 cm</output>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <script src="calculadora.js" defer></script>
+</body>
+</html>
