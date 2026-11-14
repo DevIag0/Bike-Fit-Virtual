@@ -418,8 +418,10 @@ body.card-modal-open .passos > [id^="passo"].card-ativo{
     font-weight: 700;
 }
 
-.qrcode-formulario{
+.passo9 .qrcode-formulario{
+    display: block;
     width: 220px;
+    max-width: 100%;
     height: 220px;
     object-fit: contain;
     background: #fff;
